@@ -1,18 +1,33 @@
 package com.company;
 import java.util.Arrays;
 public class Main {
-
-   
     public static void main(String[] args) {
         System.out.println("Hello, World-!"); 
         
-        int[] ron = {58,7,1,1,3,40,10,2};   ///{58,8,6,1,3,40,10,2}
+        int[] ron = {58,8,6,1,3,40,10,2};   ///{58,8,6,1,3,40,10,2}
         int max =findMax(ron);
        System.out.println(max);
-    int answer = z(ron);
+    int answer = ron(ron);
        System.out.println(answer);
     }
     
+    
+    public static int ron(int [] arr){
+        if(arr.length<5){
+            return 0;
+        }else if(arr.length == 5){
+            return (arr[1]+arr[3]);
+            
+        }else{
+            z(arr);
+        }
+        
+        
+        return 0;
+        
+    
+        
+    }
     public static  int z (int [] arr){
         int max =  findMax(arr);
         int min = max;
@@ -82,5 +97,4 @@ public class Main {
         }
         return max;
     }
-
 }
