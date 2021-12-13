@@ -18,12 +18,10 @@ public class Main {
         }else if(arr.length == 5){
             return (arr[1]+arr[3]);
             
-        }else{
-            z(arr);
         }
         
         
-        return 0;
+        return  z(arr);
         
     
         
